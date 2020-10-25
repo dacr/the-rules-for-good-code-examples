@@ -1,4 +1,4 @@
-# the rules for good code examples
+# The rules for good code examples
 
 Code examples are very important, each example is most of the time
 designed to focus on a particular feature/characteristic of a
@@ -178,6 +178,7 @@ In fact this is quite easy thanks to :
   - Take a look to my publicly [shared examples knowledge bases][dacr-gists-overview]
     to have a good idea of what it does.  
 
+![](images/)
 
 [amm]: https://ammonite.io/
 [cem]: https://github.com/dacr/code-examples-manager
