@@ -161,7 +161,7 @@ Once you've written dozens of examples, you'll quickly need to industrialize the
 - how to search through your examples ?
 
 All of this require some good practices, and tooling. Among the good practices one of the most important one is
-to insert within each of your example meta-data in order to give more insights about it. You can add meta-data
+to insert within each of your example some meta-data in order to give more insights about it. You can add several meta-data
 fields such as a short description, a keyword list, some licensing information, ... which will greatly help your
 examples life-cycle management. 
 
