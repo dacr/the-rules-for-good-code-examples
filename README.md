@@ -7,12 +7,12 @@ They help us to quickly test, experiment and remember how bigger
 project or at least some parts of them are working.
 
 Learning or remembering is much quicker when we have at our disposal
-our own set of examples. This set of examples is a **knowledge asset**,
+your own set of examples. This set of examples is a **knowledge asset**,
 we must become aware of its value for us but also from a project team
 point of view.
 
 Being aware of this knowledge asset means that you should establish
-and follow some simple rules which will help you or the project team to 
+and follow some simple rules which will help you or your project team to 
 valorize this asset.
 
 ## Simple rules for good code examples
