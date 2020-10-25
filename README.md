@@ -6,7 +6,7 @@ programming language, a library or a framework.
 They help us to quickly test, experiment and remember how bigger
 project or at least some parts of them are working.
 
-Learning or remembering is much quicker when we have at our disposal
+Learning or remembering is much quicker when you have at your disposal
 your own set of examples. This set of examples is a **knowledge asset**,
 we must become aware of its value for us but also from a project team
 point of view.
