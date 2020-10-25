@@ -1,4 +1,4 @@
-# The rules for good code examples
+# [The rules for good code examples](https://github.com/dacr/the-rules-for-good-code-examples)
 
 Code examples are very important, each example is most of the time
 designed to focus on a particular feature/characteristic of a
@@ -17,12 +17,12 @@ valorize this asset.
 
 ## Simple rules for good code examples
 
-- **One purpose**
-- **Limited size**
-- **Runnable**
-- **Exploratory compatible**
-- **Self-describing**
-- **Manage and share**
+- [**One purpose**](#one-purpose-rule)
+- [**Limited size**](#limited-size-rule)
+- [**Runnable**](#runnable-rule)
+- [**Exploratory compatible**](#exploratory-compatible-rule)
+- [**Self-describing**](#self-describing-rule)
+- [**Manage and share**](#manage-and-share-rule)
 
 When writing source code examples, try to take into account the maximum
 number of those rules in order to implement the best possible examples. 
