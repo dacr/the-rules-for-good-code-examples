@@ -178,7 +178,7 @@ In fact this is quite easy thanks to :
   - Take a look to my publicly [shared examples knowledge bases][dacr-gists-overview]
     to have a good idea of what it does.  
 
-![](images/)
+![](images/cem-keywords.png)
 
 [amm]: https://ammonite.io/
 [cem]: https://github.com/dacr/code-examples-manager
@@ -188,3 +188,4 @@ In fact this is quite easy thanks to :
 [scalatest]: https://www.scalatest.org/
 [snippets]: https://gitlab.com/explore/snippets
 [gists]: https://gist.github.com/
+
