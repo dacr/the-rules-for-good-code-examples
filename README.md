@@ -22,7 +22,7 @@ valorize this asset.
 - [**Runnable**](#runnable-rule)
 - [**Exploratory compatible**](#exploratory-compatible-rule)
 - [**Self-describing**](#self-describing-rule)
-- [**Manage and share**](#manage-and-share-rule)
+- [**manageable and shareable**](#manageable-and-shareable-rule)
 
 When writing source code examples, try to take into account the maximum
 number of those rules in order to implement the best possible examples. 
@@ -62,15 +62,15 @@ it means that **it must provide** the following information :
 - what are its required **software dependencies**
   - linux packages required to run this bash script example
   - python modules to install before trying to run the example
-  - maven/classpath required packages
+  - maven/classpath required artifacts
 
 The minimum thing to do is to add comments in your example which list the
 required runtime and dependencies information. You can also use a [shebang][shebang]
-to make your example directly executable while giving to the reading the
+to make your example directly executable while giving to the example reader the
 information about how it is executed.
 
 It is also important that your example *prints* something, for a function, add
-some usage example with printed results.
+some usage example with visible results.
 
 ```python
 #!/usr/bin/env python3
@@ -82,13 +82,16 @@ print('1+2='+str(add(1,2)))
 A very good developer experience is achieved when you use the [ammonite][amm]
 REPL as it is able to load software dependencies at runtime !
 ```scala
+#!/usr/bin/env amm
 import $ivy.`com.lihaoyi::requests:0.6.5`
 requests.get("https://httpbin.org/get").lines().foreach(println)
 ```
+In this small example, the runtime context is given by the shebang, and the dependencies requirements 
+is directly given by the executed import instruction.
 
 ### Exploratory compatible rule
 
-When a read-eval-print-loop (REPL) can be used with your example, organize your example
+When a read-eval-print-loop (REPL) is available in your example context, organize your example
 in a way that it is **easy to copy/paste the example in a REPL session** for interactive
 exploratory live experiments.
 
@@ -96,7 +99,9 @@ For one-liner example this is trivial, with longer examples it may add some cons
 depending of your technological choices, so while writing your example, use a REPL session
 interactivly to check how it behaves and also to help you enhance your code example.
 
-For example for python don't forget to add an empty line after each function definition.
+For example for python don't forget to add an empty line after each function definition ;) And for
+ammonite, it may require either to add some braces within you example or to copy/paste within braces
+to avoid any issue.
 
 ### Self-describing rule
 
@@ -147,32 +152,35 @@ object StringOperations extends AnyFlatSpec with should.Matchers {
 }
 StringOperations.execute()
 ```
+This example comes from [a bigger one][strops] I maintain whose purpose is a sheet cheat about advanced operations on strings.
 
 **So when executed, the output describes exactly what it does, and even more, as this is unit tests based it will
 fail until you give the right implementation ! Or until you've understood what's going on ;)**
 
-### Manage and share rule
+### Manageable and shareable rule
 
 Once you've written dozens of examples, you'll quickly need to industrialize their life cycle. It will mean :
+- how to deal with maintenance ?
 - how to share them ? Publicly or internally ? 
 - how to let people react over them ?
 - how to manage their change history ?
 - how to write them from your perspective or from the team one ?
 - how to search through your examples ?
 
-All of this require some good practices, and tooling. Among the good practices one of the most important one is
+All of these require some good practices, and tooling. Among the good practices one of the most important one is
 to insert within each of your example some meta-data in order to give more insights about it. You can add several meta-data
-fields such as a short description, a keyword list, some licensing information, ... which will greatly help your
+fields such as a short description, a keywords list, some licensing information, ... which will greatly help your
 examples life-cycle management. 
 
-In fact this is quite easy thanks to :
+In fact this is quite easy thanks to this simple recipe :
 - GIT repository to store all your examples
   - store your examples or your team collective examples inside a GIT repository
+  - this repository can be kept private or limited to given set of people
 - [Gitlab snippets][snippets]/[Github gists][gists] solutions to share small code example, as they
   - give an easy way to publish and share any numbers of examples
   - provide user interactions for each example (comments, starring, ...)
   - provide a search engine
-  - store the history of all exampleschanges
+  - store the history of all examples changes
 - And it becomes even easier by using the [code-examples-manager][cem] project
   - it automates everything, and becomes mandatory as soon as you have dozens of examples. 
   - Take a look to my publicly [shared examples knowledge bases][dacr-gists-overview]
@@ -188,4 +196,4 @@ In fact this is quite easy thanks to :
 [scalatest]: https://www.scalatest.org/
 [snippets]: https://gitlab.com/explore/snippets
 [gists]: https://gist.github.com/
-
+[strops]: https://gist.github.com/dacr/3b592b9f9ed0b88a7236503f075b8f89
