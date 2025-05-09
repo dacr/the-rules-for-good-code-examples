@@ -226,16 +226,22 @@ and now 7 years later, I've a data set made of almost 1300 snippets (almost 1000
 - All my personal snippets are stored in a private GIT repository
 - All my team snippets are stored in a shared GIT repository
 - Almost everything is managed by a dedicated software called [code-examples-manager][cem] :
-  - publishes/synchronizes on [Github gists][dacr-gists] and [Gitlab snippets][dacr-snippets]
-  - generates a summary of [the published snippets knowledge base][dacr-gists-overview]
+  - publishes/synchronizes on [GitHub gists][dacr-gists] and [Gitlab snippets][dacr-snippets]
+  - generates and synchronizes a summary of [the published snippets knowledge base][dacr-gists-overview]
+  - executes all executable snippets to check their states and if some maintenance is needed
   - check global snippets coherency and report various statistics
 - A tool coded as a snippet ([cem-tool.sc](https://gist.github.com/dacr/f25da8222b2ac644c3195c5982b7367e)) is used to feed an opensearch search engine
   - Dashboard with various statistics,
   - Snippets execution trends, ...
 - Stable set of meta-data keywords, see [code-examples-manager][cem] for more information
-- Keep such a discipline over the years unlocks me various opportunities
+- Such a discipline over the years unlocks me various opportunities
   - Elasticsearch/opensearch training with a part based on this dataset :)
   - Various AI-related experiments again with this dataset :) 
+- I've started with what I called first code examples, now it can be anything, so I use now the 'snippet' terminology
+  - snippets as documentation,
+  - snippets as configuration files,
+  - snippets as dedicated dataset (csv content for example), 
+  - ...
 
 ![](assets/cem-dashboard.png)
 
