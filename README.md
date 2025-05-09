@@ -237,7 +237,7 @@ and now 7 years later, I've a data set made of almost 1300 snippets (almost 1000
 - Such a discipline over the years unlocks me various opportunities
   - Elasticsearch/opensearch training with a part based on this dataset :)
   - Various AI-related experiments again with this dataset :) 
-- I've started with what I called first code examples, now it can be anything, so I use now the 'snippet' terminology
+- I've started with what I called first code examples, now it can be anything, so I use the 'snippet' terminology
   - snippets as documentation,
   - snippets as configuration files,
   - snippets as dedicated dataset (csv content for example), 
