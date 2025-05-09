@@ -242,6 +242,10 @@ and now 7 years later, I've a data set made of almost 1300 snippets (almost 1000
   - snippets as configuration files,
   - snippets as dedicated dataset (csv content for example), 
   - ...
+- My state of mind
+  - I'm happy to share my snippets
+  - I use them every day as they are fully integrated in my daily work
+  - Time to add more AI use cases with them
 
 ![](assets/cem-dashboard.png)
 
