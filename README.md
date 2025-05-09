@@ -169,7 +169,7 @@ Or until you've understood what's going on ;)
 
 ### Security and confidentiality rule
 
-** A good code snippet takes care of security and confidentiality**. It should not contain any
+**A good code snippet takes care of security and confidentiality**. It should not contain any
 sensitive information, and should not be able to access any sensitive information.
 
 Some good practices related to security and confidentiality :
