@@ -184,6 +184,18 @@ Some good practices related to security and confidentiality :
   - Really take care with copy/paste content from anywhere
   - Avoid the use of internal AI assistant if you plan to share the snippet
 
+Scala snippet which uses an environment variable to inject a secret :
+```scala
+//...
+envOrNone("RANDOM_ORG_API_KEY") match {
+  case None      => println("Signup to random.org, create an api key or reuse an existing one - https://api.random.org/dashboard")
+  case Some(key) =>
+    println(generate(key, 5, 1, 49).sorted.mkString(","))
+    println(generate(key, 1, 1, 10).sorted.mkString(","))
+}
+//...
+```
+
 ### Manageable and shareable rule
 
 **A good code snippet comes with meta-data** typically used to identify it uniquely, 
